@@ -1,0 +1,16 @@
+# Node / Next build artifacts
+node_modules/
+.next/
+out/
+
+# Logs
+*.log
+
+# Environment files (keep secrets out of Git)
+.env
+.env.*
+!.env.example
+
+# Prisma (local DB)
+prisma/*.db
+
