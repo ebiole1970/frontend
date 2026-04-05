@@ -1,17 +1,24 @@
 import type { ReactNode } from "react";
+import SiteFooter from "../components/site-footer";
 import "./globals.css";
+import Providers from "./providers";
 
 export const metadata = {
-  title: "CyberShield & NIS2 Advisor",
+  title: "GetNeuralOps — CyberShield & NIS2 Advisor",
   description:
-    "Piattaforma SaaS per la valutazione del rischio cyber esterno e della conformità NIS2.",
+    "GetNeuralOps: perimetro digitale, analisi cyber, readiness NIS2 e catalogo di 12 strumenti. Servizio BE FAST WEB S.R.L.S.",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: ReactNode }>) {
   return (
     <html lang="it" className="dark">
       <body className="min-h-screen bg-slate-950 text-slate-50 antialiased">
-        {children}
+        <Providers>
+          <div className="flex min-h-screen flex-col">
+            <div className="flex-1">{children}</div>
+            <SiteFooter />
+          </div>
+        </Providers>
       </body>
     </html>
   );
