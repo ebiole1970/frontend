@@ -64,7 +64,7 @@ export default function MarketplacePage() {
           Bundle consigliati da noi
         </h2>
         <p className="mt-1 text-xs text-slate-500">
-          Due strumenti complementari a prezzo promozionale (stesso checkout del bundle 15€). Ideale per
+          Due strumenti complementari a prezzo promozionale (stesso checkout del bundle 19,99€). Ideale per
           coprire rischi collegati in un solo acquisto.
         </p>
         <div className="mt-4 grid gap-4 md:grid-cols-3">
@@ -107,19 +107,19 @@ export default function MarketplacePage() {
             key={t.id}
             className="flex flex-col rounded-xl border border-slate-800 bg-slate-900/40 p-4 shadow-sm transition hover:border-slate-700"
           >
-            <div className="mb-3 flex items-start gap-3">
+            <div className="mb-3 overflow-hidden rounded-lg border border-slate-700 bg-gradient-to-br from-slate-900 to-slate-950 p-4">
               <img
                 src={`/icons/tools/${t.id}.svg`}
-                width={40}
-                height={40}
-                alt=""
-                className="h-10 w-10 shrink-0"
+                width={56}
+                height={56}
+                alt={`${t.name} icona`}
+                className="h-14 w-14"
                 loading="lazy"
               />
-              <div className="min-w-0 flex-1">
-                <h2 className="text-sm font-semibold text-slate-100">{t.name}</h2>
-                <p className="mt-0.5 text-[11px] uppercase tracking-wide text-slate-500">{t.focus}</p>
-              </div>
+            </div>
+            <div className="mb-3 min-w-0">
+              <h2 className="text-sm font-semibold text-slate-100">{t.name}</h2>
+              <p className="mt-0.5 text-[11px] uppercase tracking-wide text-slate-500">{t.focus}</p>
             </div>
             <p className="text-sm leading-relaxed text-slate-300">{t.short_description}</p>
             <p className="mt-3 text-base font-semibold text-emerald-400">
@@ -152,7 +152,7 @@ export default function MarketplacePage() {
       ) : null}
 
       <section id="checkout-bundle" className="scroll-mt-8 space-y-4 border-t border-slate-800 pt-8">
-        <h2 className="text-sm font-semibold text-slate-200">Checkout bundle (15 €)</h2>
+        <h2 className="text-sm font-semibold text-slate-200">Checkout bundle (19,99 €)</h2>
         <p className="text-xs text-slate-500">
           Due utilizzi strumenti marketplace al prezzo promozionale. Dopo il pagamento potrai applicare le
           analisi dalla dashboard.
@@ -160,8 +160,8 @@ export default function MarketplacePage() {
         <div className="max-w-md">
           <MarketplaceCheckoutPanel
             mode="bundle"
-            priceLabel="15 € — bundle 2 strumenti"
-            primaryLabel="Paga 15 € e apri checkout Stripe"
+            priceLabel="19,99 € — bundle 2 strumenti"
+            primaryLabel="Paga 19,99 € e apri checkout Stripe"
           />
         </div>
       </section>

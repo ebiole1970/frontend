@@ -10,14 +10,14 @@ export default function SiteFooter() {
       <div className="mx-auto max-w-4xl space-y-4">
         <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
           <NavShortcuts />
-          <p className="text-[11px] text-slate-600 sm:max-w-md">
-            Su ogni pagina: torna alla home o apri il catalogo strumenti.
-          </p>
         </div>
         <p className="leading-relaxed">{PRIVACY_SNIPPET}</p>
         <nav className="flex flex-wrap gap-x-4 gap-y-1">
           <Link href="/marketplace" className="text-emerald-500/90 hover:text-emerald-400">
-            Catalogo strumenti
+            Strumenti
+          </Link>
+          <Link href="/helpdesk" className="text-emerald-500/90 hover:text-emerald-400">
+            Assistenza e ticket
           </Link>
           <Link href="/terms-of-service" className="text-emerald-500/90 hover:text-emerald-400">
             Termini di servizio
@@ -30,8 +30,7 @@ export default function SiteFooter() {
           </Link>
         </nav>
         <p className="text-slate-600">
-          © {new Date().getFullYear()} BE FAST WEB S.R.L.S. (P.IVA 12958700010) — CyberShield &amp; NIS2
-          Advisor
+          © {new Date().getFullYear()} BE FAST WEB S.R.L.S. (P.IVA 12958700010) — GetNeuralOps
         </p>
       </div>
     </footer>

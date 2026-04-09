@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-/** Doppia navigazione richiesta: sempre accessibili Home e Catalogo (route `/marketplace`). */
+/** Doppia navigazione richiesta: sempre accessibili Home e Strumenti (route `/marketplace`). */
 export function NavShortcuts({ className = "" }: { className?: string }) {
   return (
     <div
@@ -17,7 +17,13 @@ export function NavShortcuts({ className = "" }: { className?: string }) {
         href="/marketplace"
         className="inline-flex items-center rounded-lg border border-emerald-600/50 bg-emerald-950/40 px-3 py-1.5 text-xs font-semibold text-emerald-300 transition hover:bg-emerald-950/70"
       >
-        Catalogo
+        Strumenti
+      </Link>
+      <Link
+        href="/helpdesk"
+        className="inline-flex items-center rounded-lg border border-slate-600 bg-slate-900/80 px-3 py-1.5 text-xs font-medium text-slate-200 transition hover:border-emerald-500/50 hover:text-emerald-300"
+      >
+        Assistenza
       </Link>
     </div>
   );

@@ -55,6 +55,15 @@ export default function MarketplaceToolDetailPage() {
       </nav>
 
       <header className="space-y-3">
+        <div className="overflow-hidden rounded-xl border border-slate-800 bg-gradient-to-r from-slate-900 via-slate-900 to-slate-950 p-5">
+          <img
+            src={`/icons/tools/${t.id}.svg`}
+            width={72}
+            height={72}
+            alt={`${t.name} icona`}
+            className="h-16 w-16"
+          />
+        </div>
         <div className="flex flex-wrap items-start gap-4">
           <img
             src={`/icons/tools/${t.id}.svg`}

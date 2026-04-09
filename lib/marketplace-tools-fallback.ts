@@ -29,8 +29,8 @@ export type MarketplaceBundle = {
   why: string;
 };
 
-const ONE_SHOT_EUR = 10;
-const BUNDLE_EUR = 15;
+const ONE_SHOT_EUR = 9.99;
+const BUNDLE_EUR = 19.99;
 
 const _BASE: MarketplaceToolBase[] = [
   {

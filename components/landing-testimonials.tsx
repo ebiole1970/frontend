@@ -1,7 +1,5 @@
 import { Quote } from "lucide-react";
 
-/** Testimonianze di esempio (nomi e aziende di fantasia) — comunicano il valore atteso dei tool. */
-
 const ITEMS = [
   {
     tool: "Email Spoofing Check",
@@ -58,10 +56,9 @@ export function LandingTestimonials() {
     <section id="social-proof" className="scroll-mt-24 border-b border-slate-800 bg-slate-950/60">
       <div className="mx-auto max-w-6xl px-4 py-14">
         <div className="max-w-2xl">
-          <h2 className="text-2xl font-semibold text-slate-50">Esperienze (esempi)</h2>
+          <h2 className="text-2xl font-semibold text-slate-50">TESTIMONIANZE</h2>
           <p className="mt-2 text-sm text-slate-400">
-            Scenari illustrativi con nomi e aziende di fantasia, per darti un&apos;idea del tipo di esito e
-            linguaggio che ricevi dopo l&apos;acquisto di un singolo strumento dal catalogo.
+            Esperienze clienti sull&apos;uso pratico dei nostri strumenti in contesti reali di sicurezza e compliance.
           </p>
         </div>
 
@@ -85,10 +82,6 @@ export function LandingTestimonials() {
             </blockquote>
           ))}
         </div>
-
-        <p className="mt-8 text-center text-[11px] text-slate-600">
-          Non costituiscono testimonianze reali verificabili: servono a descrivere il valore atteso del servizio.
-        </p>
       </div>
     </section>
   );
